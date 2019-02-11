@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8"> 
+  <title>Guardian-CCS</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">     
+  <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="../css/pc.css" /> <!-- pc --> 
+  <link rel="stylesheet" media="(min-width:768px) and (max-width:1024px)" href="../css/tablet.css"> <!-- tablet -->
+  <link rel="stylesheet" media="(min-width:0px) and (max-width:767px)" href="../css/mobile.css"> <!-- mobile -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="../js/ui_md.js"></script>
+ </head>
+ <body>
+     <div id="allWrap">
+        <div id="btnMenu"><img src="../images/btn_menu.png" alt="메뉴열기"></div>        
+        <!-- 왼쪽메뉴영역 -->
+        <div id="leftArea_w"> 
+             <span class="lnbClose"></span>
+             <div id="leftArea">
+                 <div class="tit_h1">
+                     <a href="index.html">
+                         <div class="credit-card">
+                          <div class="front animate">
+                            <img id="rotate-img" img src="../images/log_front.png" alt=""/> 
+                          </div>
+                          <div class="back">
+                            <img id="rotate-img" img src="../images/log_back.png" alt=""/> 
+                          </div>
+                        </div>
+                     </a>
+                 </div>     
+                 <div class="md_logarea">                 
+                     <div class="log_infor">fnsvalue 님 <span>환영합니다.</span></div>
+                     <div class="log_btn"><button>로그아웃</button></div>
+                 </div>             
+                 <div class="leftMenu">
+                     <ul class="lnb">
+                        <li>
+                            <a href="#none">이력 관리</a>
+                            <ul class="depth2">                            
+                                <li><a href="#none">- 인증 이력</a></li> 
+                             </ul>
+                        </li>
+                        <li class="on">
+                            <a href="#none">설정</a>
+                            <ul class="depth2">
+                                <li class="on"><a href="#none">- 개인 식별 아이콘</a></li>                             
+                                <li><a href="#none">- 인증 단계</a></li>                             
+                             </ul>
+                        </li>
+                     </ul>
+                     <p class="copy_txt">Copyright ⓒ FNSVALUE Co Ltd. <span>All Rights Reserved.</span></p>                  
+                 </div>             
+             </div>
+         </div>
+         <!--// 왼쪽메뉴영역 -->
+         <!-- 오른쪽 영역 -->
+         <div id="contArea">
+            <div id="contArea_in">
+                 <!-- 헤더 영역 -->
+                 <div id="header">
+                     <h2 class="tit_h2">사용자</h2>
+                     <div class="log_infor">fnsvalue 님 환영합니다.</div>
+                     <div class="log_btn"><button>로그아웃</button></div>
+                 </div>
+                 <!--// 헤더 영역 -->
+                 <!-- 컨텐츠 영역 -->
+				 <div class="nav_tit">
+					 <div class="nav">
+						 <span class="home"></span>                         
+						 <span>설정</span>
+						 <span class="nposi">개인 식별 아이콘</span>
+				     </div>
+					 <div class="tit">
+						  <h3>개인 식별 아이콘</h3>           
+					 </div>                    
+				 </div>
+                 <div id="contents">                     
+                     <div class="mgray_area">
+                         <div class="dtop_txt">
+                             <ul>
+                                 <li>- 사용자가 설정한 개인 식별 아이콘을 확인할 수 있습니다.</li>
+                                 <li>- 보다 안전한 서비스를 위해 고객별 개인화 이미지를 등록할 수 있습니다.</li>
+                                 <li>- 최대 3개의 이미지가 등록 가능하며 수정버튼을 누를 경우 변경 하실 수 있습니다.</li>
+                             </ul>
+                         </div>
+                         <div class="cont_round_box">
+                            <div class="isb_box widn">
+                                <p class="top">고객님께서 설정 하신 개인 식별 아이콘 입니다.</p>
+                                <div class="btm">
+                                    <div class="btm_in">
+                                        <div class="icon_slt_w">
+                                           <ul>
+                                              <li><span><img src="../images/mobile/button/btn_img3_sl.png" alt=""></span></li>
+                                              <li><span><img src="../images/mobile/button/btn_img9_sl.png" alt=""></span></li>
+                                              <li><span><img src="../images/mobile/button/btn_img7_sl.png" alt=""></span></li>
+                                          </ul>
+                                       </div><button>수정</button>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                         
+                     </div>
+                 </div>
+             </div>
+             <!--// 컨텐츠 영역 -->
+         </div>
+         <!--// 오른쪽 영역 -->  
+         <div id="lnbEmpty"></div>        
+     </div>     
+ </body>
+</html>
