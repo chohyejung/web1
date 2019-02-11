@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8"> 
+  <title>Guardian-CCS</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />     
+  <link href="../css/reset.css" rel="stylesheet" type="text/css" />
+  <link href="../css/setup_mb.css" rel="stylesheet" type="text/css" />
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>  
+  <script src="../js/ui_md.js"></script>
+ </head>
+ <body>
+     <div id="joinWrap">
+        <!-- 회원가입 영역 -->
+        <div class="join_w">
+            <div class="join_in">               
+               <div class="join_cont">                   
+                   <div class="cont_in">   
+                       <span class="mb_bg_top"><img src="../images/mobile/mb_bg_top.png" alt=""></span>
+                       <h1>회원 가입</h1>                     
+                       <div class="table_w">
+                            <table class="type01">
+                                <caption>회원가입 정보 입력</caption>
+                                <colgroup>
+                                    <col width="23%">
+                                    <col width="*">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th><label for="phone_number">휴대폰 번호</label></th>
+                                        <td>   
+                                            <div class="mb_ipt_boxw"> 
+                                                <div class="mb_ipt_box">
+                                                    <span><select id="phone_number"><option>010</option><option>선택02</option><option>선택03</option></select></span>
+                                                    <span><input type="text" title="휴대전화번호 앞자리"></span>                                                              
+                                                </div>         
+                                                <button class="btnr isbk">인증번호 받기</button>
+                                                <!-- <span class="txt">인증완료</span> -->
+                                            </div>                                                                 
+                                        </td>
+                                    </tr>
+                                    <tr class="isok">
+                                        <th class="top"><label for="is_number">인증번호</label></th>
+                                        <td>   
+                                            <div class="mb_ipt_boxw"> 
+                                                <div class="mb_ipt_box_b">                                                    
+                                                    <p><input type="text" id="is_number" title="인증번호 3분 이내 입력" placeholder="인증번호 3분 이내 입력"><span>03:00</span></p>                                                              
+                                                </div>         
+                                                <button class="btnr hpok">확인</button>
+                                            </div>  
+                                            <p class="tb_txt">* 입력시간 초과시 "인증번호 받기"버튼을 눌러주세요.</p>                                                               
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="top"><label for="user_id">아이디</label></th>
+                                        <td>
+                                           <div class="tb_btnipt">
+                                               <div class="ipt_w"><input type="text" id="user_id" class="wid_type2"/></div><button>중복확인</button>
+                                           </div>
+                                           <p class="tb_txt">* 4~12자리 영문, 숫자, 특수기호(~@#) 혼용 가능</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><label for="name">이름</label></th>
+                                        <td>
+                                           <input type="text" id="name" class="wid_type3"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="top"><label for="email">이메일</label></th>
+                                        <td>
+                                           <div class="tb_btnipt">
+                                               <div class="ipt_w"><input type="text" id="email" class="wid_type2"/></div><button>중복확인</button>
+                                           </div>
+                                           <p class="tb_txt">* 최대 50자 영문, 숫자, 특수기호(_-#) 혼용 가능</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="top">개인 식별<br />아이콘</th>
+                                        <td>
+                                           <div class="me_hn">
+                                              <p>보안 강화를 위하여 최대 3개까지<br />개인 식별 아이콘을 선택 할 수 있습니다.</p>
+                                              <div class="icon_slt_w">
+                                                  <ul>
+                                                      <li><span><img src="../images/mobile/button/btn_img1_sl.png" alt=""></span></li>
+                                                      <li><span><img src="../images/mobile/button/btn_img5_sl.png" alt=""></span></li>
+                                                      <li><span><img src="../images/mobile/button/btn_img6_sl.png" alt=""></span></li>
+                                                  </ul>
+                                              </div>
+                                              <div class="icon_area">
+                                                  <ul>
+                                                      <li><p><img src="../images/mobile/button/btn_img1.png" alt="소리"><span>소리</span></p></li>
+                                                      <li><p><img src="../images/mobile/button/btn_img2.png" alt="무음"><span>무음</span></p></li>
+                                                      <li><p><img src="../images/mobile/button/btn_img3.png" alt="진동"><span>진동</span></p></li>    
+                                                  </ul> 
+                                                  <ul>
+                                                      <li><p><img src="../images/mobile/button/btn_img4.png" alt="블루투스 ON"><span>블루투스 ON</span></p></li>
+                                                      <li><p><img src="../images/mobile/button/btn_img5.png" alt="블루투스 OFF"><span>블루투스 OFF</span></p></li>
+                                                      <li><p><img src="../images/mobile/button/btn_img6.png" alt="와이파이 ON"><span>와이파이 ON</span></p></li>    
+                                                  </ul>
+                                                  <ul>                               
+                                                      <li><p><img src="../images/mobile/button/btn_img7.png" alt="와이파이 OFF"><span>와이파이 OFF</span></p></li>
+                                                      <li><p><img src="../images/mobile/button/btn_img8.png" alt="위치정보 ON"><span>위치정보 ON</span></p></li>
+                                                      <li><p><img src="../images/mobile/button/btn_img9.png" alt="위치정보 OFF"><span>위치정보 OFF</span></p></li>     
+                                                  </ul>  
+                                              </div>    
+                                              <div class="icon_btn_area">
+                                                  <button><span>모두지움</span></button><button><span>한개지움</span></button>
+                                              </div> 
+                                           </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="top">인증 단계<br />설정</th>
+                                        <td>
+                                            <ul class="issj_w">
+                                               <li><input type="radio" name="is_setup" id="is_a1" /> <label for="is_a1">단말기 인증(알림 수신 후 앱 실행 시 자동 인증)</label></li>
+                                               <li><input type="radio" name="is_setup" id="is_a2" checked /> <label for="is_a2">로그인 확인(단말기 인증 + 로그인 시도 IP 확인)</label></li>
+                                               <li><input type="radio" name="is_setup" id="is_a3" /> <label for="is_a3">아이콘 or 지문(단말기 인증 + “아이콘 or 지문인식”)</label></li>
+                                           </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="agree_box">
+                            <p>회원가입(임시)을 위한 개인정보 수집·이용 동의</p>
+                            <div class="ckb_area">
+                               <span>
+                                    <input type="checkbox" checked id="person_sj" /><label for="person_sj">개인정보 수집·이용</label>
+                               </span>
+                               <span>
+                                   <input type="checkbox" checked id="gy_sj" /><label for="gy_sj">고유식별정보 수집·이용</label>
+                               </span>
+                               <button>전문보기</button>
+                            </div>
+                       </div>
+                       <div class="btn_area">
+                           <button>가입</button>
+                           <button>취소</button>
+                       </div>
+                       <p class="txt_ps">* 임시 회원은 매주 일요일 24시에 일괄 삭제됩니다.</p>
+                   </div>
+                </div>
+            </div>           
+        </div>
+        <!--// 회원가입 영역 -->
+     </div>
+ </body>
+</html>

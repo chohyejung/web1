@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8"> 
+  <title>Guardian-CCS</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">     
+  <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="../css/pc.css" /> <!-- pc --> 
+  <link rel="stylesheet" media="(min-width:768px) and (max-width:1024px)" href="../css/tablet.css"> <!-- tablet -->
+  <link rel="stylesheet" media="(min-width:0px) and (max-width:767px)" href="../css/mobile.css"> <!-- mobile -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="../js/ui_md.js"></script>
+ </head>
+ <body>
+     <div id="allWrap">
+        <div id="btnMenu"><img src="../images/btn_menu.png" alt="메뉴열기"></div>       
+        <!-- 왼쪽메뉴영역 -->
+        <div id="leftArea_w"> 
+             <span class="lnbClose"></span>         
+             <div id="leftArea">
+                 <div class="tit_h1">
+                     <a href="index.html">
+                         <div class="credit-card">
+                          <div class="front animate">
+                            <img id="rotate-img" img src="../images/log_front.png" alt=""/> 
+                          </div>
+                          <div class="back">
+                            <img id="rotate-img" img src="../images/log_back.png" alt=""/> 
+                          </div>
+                        </div>
+                     </a>
+                 </div>     
+                 <div class="md_logarea">                 
+                     <div class="log_infor">fnsvalue 님 <span>환영합니다.</span></div>
+                     <div class="log_btn"><button>로그아웃</button></div>
+                 </div>
+                 <div class="leftMenu">
+                     <ul class="lnb">
+                        <li>
+                            <a href="#none">이력 관리</a>
+                            <ul class="depth2">                            
+                                <li><a href="#none">- 인증 이력</a></li> 
+                             </ul>
+                        </li>
+                        <li>
+                            <a href="#none">설정</a>
+                            <ul class="depth2">
+                                <li><a href="#none">- 개인 식별 아이콘</a></li>                             
+                                <li><a href="#none">- 인증 단계</a></li>                             
+                             </ul>
+                        </li>
+                     </ul>
+                     <p class="copy_txt">Copyright ⓒ FNSVALUE Co Ltd. <span>All Rights Reserved.</span></p>                   
+                 </div>        
+             </div>
+         </div>
+         <!--// 왼쪽메뉴영역 -->
+         <!-- 오른쪽 영역 -->
+         <div id="contArea">
+            <div id="contArea_in">
+                 <!-- 헤더 영역 -->
+                 <div id="header">
+                     <h2 class="tit_h2">사용자</h2>
+                     <div class="log_infor">fnsvalue 님 환영합니다.</div>
+                     <div class="log_btn"><button>로그아웃</button></div>
+                 </div>
+                 <!--// 헤더 영역 -->
+                 <!-- 컨텐츠 영역 -->
+				 <div class="nav_tit">
+					 <div class="nav">
+						 <span class="home"></span>                         
+						 <span class="nposi">Main</span></div>
+					 <div class="tit">
+						  <h3>Total <span>Dashboard</span></h3>           
+					 </div>                    
+				 </div>
+                 <div id="contents">
+                     
+                     <div class="mgray_area">
+                         <div class="dtop_txt">
+                             <ul>
+                                 <li>- 전체 및 기간별 현황을 파악할 수 있습니다.</li>
+                                 <li>- 수치 클릭 시 해당 메뉴로 이동합니다.</li>
+                             </ul>
+                         </div>
+                         <div class="date_src">
+                              <div class="date_box_w">
+                                 <div class="date_box"><input type="text" title="시작날짜 선택"/><input type="image" src="../images/bg_calendar.gif" title="달력"/></div><span>~</span><div class="date_box"><input type="text" title="종료날짜 선택"/><input type="image" src="../images/bg_calendar.gif" title="달력"/></div> 
+                             </div><span><button>검색하기</button></span>
+                         </div>
+                         <div class="micon_list user">
+                             <ul>
+                                 <li>
+                                     <p>최근 접속 이력</p>
+                                     <p><span class="date">2019-01-03(목)<br />19:56:00</span></p>
+                                 </li>
+                                 <li>
+                                     <p><span>2019년 01월</span>이번 달 인증 건수</p>
+                                     <p><a href="#none">51</a></p>
+                                 </li>
+                                 <li>
+                                     <p>인증 건수</p>
+                                     <p><a href="#none">0</a></p>
+                                 </li>
+                                 <li>
+                                     <p>인증 실패 건수</p>
+                                     <p><a href="#none">160,123</a></p>
+                                 </li>
+                             </ul>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <!--// 컨텐츠 영역 -->
+         </div>
+         <!--// 오른쪽 영역 -->  
+         <div id="lnbEmpty"></div>        
+     </div>     
+ </body>
+</html>
